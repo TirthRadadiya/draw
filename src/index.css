@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #111827;
+}
+
+.range-thumb-blue::-webkit-slider-thumb {
+  @apply w-4 h-4 bg-blue-500 rounded-full appearance-none cursor-pointer;
+}
+
+.range-thumb-blue::-moz-range-thumb {
+  @apply w-4 h-4 bg-blue-500 rounded-full cursor-pointer border-0;
+}
