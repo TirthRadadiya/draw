@@ -35,7 +35,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
   const activeClass = "bg-blue-600 text-white";
 
   return (
-    <div className="absolute top-0 left-4 flex flex-col gap-1 p-1.5 rounded-lg bg-[#202020] shadow-2xl border border-gray-700/50">
+    <div className="absolute top-20 left-4 flex flex-col gap-1 p-1.5 rounded-lg bg-[#202020] shadow-2xl border border-gray-700/50">
       {tools.map(({ name, icon }) => {
         const isActive = activeTool === name;
         return (

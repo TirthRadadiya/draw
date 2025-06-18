@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    // This glob pattern is crucial!
-    "./src/**/*.{js,ts,jsx,tsx}", 
-  ],
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    // You have this plugin installed, so let's include it
+    require("@tailwindcss/forms"),
   ],
-}
+};

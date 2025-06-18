@@ -24,7 +24,7 @@ export const PropertiesPanel: React.FC<PropertiesPanelProps> = ({
 
   return (
     <div
-      className={`absolute top-0 left-0 flex items-center gap-4 p-2 rounded-lg bg-[#202020] shadow-2xl border border-gray-700/50 transition-all duration-300 ${
+      className={`absolute top-5 left-[20px] flex items-center gap-4 p-2 rounded-lg bg-[#202020] shadow-2xl border border-gray-700/50 transition-all duration-300 ${
         selectedShape
           ? "opacity-100 translate-y-0"
           : "opacity-0 -translate-y-16 pointer-events-none"
@@ -83,7 +83,7 @@ export const PropertiesPanel: React.FC<PropertiesPanelProps> = ({
                   e.target.value as StrokeStyle
                 )
               }
-              className="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              className="bg-gray-700 border-gray-600 rounded-md py-1 px-5 text-sm focus:ring-blue-500 focus:border-blue-500"
             >
               {strokeStyles.map((style) => (
                 <option key={style} value={style} className="capitalize">
