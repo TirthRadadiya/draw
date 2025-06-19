@@ -115,6 +115,7 @@ const DrawingCanvas: React.FC = () => {
         height: 0,
         fill: "none",
         stroke: "#fff", // white border by default
+        fillOpacity: 1,
       });
     } else if (tool === "ellipse") {
       setDrawing({
@@ -126,6 +127,7 @@ const DrawingCanvas: React.FC = () => {
         ry: 0,
         fill: "none",
         stroke: "#fff", // white border by default
+        fillOpacity: 1,
       });
     } else if (tool === "arrow") {
       setDrawing({
@@ -147,6 +149,7 @@ const DrawingCanvas: React.FC = () => {
         points: [[x, y]],
         fill: "none",
         stroke: "#fff", // white border by default
+        fillOpacity: 1,
       });
     }
   };
